@@ -41,6 +41,7 @@ class HighPressureO2Pipe(IPiping):
 class LowPressureWaterPipe(IPiping):
     pass
 
+
 class PipeFactory(IPiping):
     @staticmethod
     def build_pipe(pipe_type):
