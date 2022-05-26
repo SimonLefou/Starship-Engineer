@@ -17,7 +17,7 @@ class SolarPanel(IElectricalSystem):
         Self.move_panel()
 
 
-    def move_panel(max_wattage):
+    def move_panel():
         """
         Method that moves the solar panels toward any solar source to max power output
         
@@ -33,7 +33,6 @@ class SolarPanel(IElectricalSystem):
 
         last_voltage = 0
         voltage = 0
-        max_voltage = 0
         
         pan_angle = 0   #Set initial angles
        
