@@ -1,4 +1,6 @@
 import IElectricalSystem
+import battery_constants
+import constants
 
 class Battery(IElectricalSystem):
     __output = None
