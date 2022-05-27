@@ -1,4 +1,3 @@
-from typing_extensions import Self
 import IElectricalSystem
 
 
@@ -14,8 +13,6 @@ class SolarPanel(IElectricalSystem):
     def get_wattage():
         pass
 
-        Self.move_panel()
-
 
     def move_panel():
         """
@@ -24,7 +21,6 @@ class SolarPanel(IElectricalSystem):
         max_wattage: int Max theorical solar panel power output
 
         return current_wattage
-
         """
 
         """

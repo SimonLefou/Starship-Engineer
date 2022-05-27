@@ -1,4 +1,4 @@
-import IElectricalSystem
+from constants.electrical import IElectricalSystem
 
 
 class Heater(IElectricalSystem):

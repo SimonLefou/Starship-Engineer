@@ -14,6 +14,8 @@ class Cable(IElectricalSystem):
     def get_temp(self):
         power = self.__input.get_wattage()
         temp = power * self.__resistance
+        # 
+        # 
         # TODO Calculer inertie thermique
         return temp
 

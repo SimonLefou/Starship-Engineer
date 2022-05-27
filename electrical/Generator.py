@@ -1,5 +1,5 @@
 import IElectricalSystem
-import random
+
 
 class Generator(IElectricalSystem):
     __input = None
