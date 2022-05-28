@@ -1,0 +1,128 @@
+
+connecteurs
+	cables
+	lignes fuel / hydraulique / azote liquide
+		pression, vitesse, temp
+
+pompes hydraulique
+
+
+class Reacteur:
+
+	Qui fournit soit la chaleur soit directement l’électricité au vaisseau
+	La chaleur est utilisée par des génératrices qui transforment les joules en électricité
+	Ce n’est pas le ou les réacteurs qui fournissent la poussée du vaisseau !!
+
+	def ElectricityProduction (self) :	Produit de l’électricité
+
+	def Consumption(self) :	Consomme du fuel
+
+	def Maintenance(self) :		augmente la durée de vie mais pas la production
+
+
+Panneaux Solaire
+
+	def ElectricityProduction (self) :	Produit de l’electricité
+		fonction de l’orientation / au soleil. Si pas de soleil = pas d’elect
+		necessite de l’electricité pour orienter les panneaux
+
+	def UsureDansLeTemps(self) : 	Usure du temps
+
+	def Maintenance(self) :		augmente la durée de vie mais pas la production
+
+	Fournis de l’électricité (faible quantité) aux batteries.
+	Les systèmes électriques prévoient de pouvoir faire une dérivation vers certains équipements en cas de nécessité
+
+
+Petit générateur électrique (groupe électrogène) APU
+
+	def demarrage()	 # y a t il de l’electricité et du fuel pour le démarrer
+		if fuel_level = 0 or wattage = 0:
+			generator_start = False
+
+
+	consomme du fuel
+
+	def electricity_production (self):	# Produit de l’electricité
+
+	def maintenance(self) :				# Augmente la durée de vie mais pas la production
+
+
+Générateur saut Quantique
+	Nécessite une très grosse quantité d’électricité
+	Nécessite du fuel quantique
+		Vérification des niveaux
+	def Maintenance(self) :		augmente la durée de vie mais pas la production
+
+
+Recycleur de CO2
+	def air_recycling()
+		"""
+			needs: 
+				electricity
+				working ventilations
+				air pressure
+				filtration unit (needs maintenance and replacement)
+			consumes Electricity
+			produces : 
+				O2
+				CO2 level down
+		"""
+
+
+Recycleur d’humidité
+	Trop d’humidité peut endommager et créer des court circuits
+	Nécessite que les ventilations fonctionnent
+
+
+Recycleur des déjections
+	Récupération de l’eau
+
+
+Filtration de l’eau
+	Récupère les eaux des recycleurs pour la rendre potable
+
+
+Batteries
+	Sont nécessaires au démarrage des réacteurs si le vaisseau est « cold »
+	Quand on active les batteries, les systèmes ne se mettent pas en ligne tout de suite (temps de vérification)
+	A surveiller : la température des batteries sinon risque d’explosion
+		possibilité de les refroidir par un circuit hydraulique
+	Si le niveau des batteries est trop faible le ou les réacteurs ne démarreront pas
+	Quand une source d’energie est disponible, les batteries se rechargent
+
+Pompes Hydrauliques
+	Pour l’ouverture fermeture des sas, portes de hangar
+
+Transformateurs
+	Chaque équipement nécessite une certaine quantité d’électricité : un micro onde aura besoin de moins d’elect que le générateur de saut quantique
+	D’où la nécessité de transformer le voltage et l’ampérage de l’électricité fournie par le ou les réacteurs / génératrices / panneaux solaire / Batteries
+
+Boîtier de dérivation
+
+
+Reservoirs hydrauliques (huile)
+
+Reservoirs hydrauliques (eau)
+
+Reservoirs Fuel / Hydrogène / Quantique / Azote Liquide
+
+
+Tableaux Électrique
+	Disponibles dans chaque salle, possèdent les coupes circuit, les différentiels pour protéger
+
+
+Cables electriques
+	Grosses sections - 150KV
+	petites sections - 110 450V
+
+Les différentes salles
+	Cuisine
+	Chambre
+	Couloirs
+	Sas de sécurité
+	Cockpit
+	Chambres
+	Local Technique
+	Labo de recherche
+	Pod d’éjection

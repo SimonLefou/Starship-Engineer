@@ -1,4 +1,4 @@
-import IPiping
+from piping import IPiping
 
 
 class Pipe(IPiping):
